@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>李伯育 - Frontend Developer</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <base href="/side-project/">
     <style>
         /* 基礎樣式 */
         body {
@@ -33,7 +33,7 @@
 
         .navbar.scrolled {
             background-color: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             padding: 1rem 0;
         }
 
@@ -121,34 +121,34 @@
             transition: all 0.3s ease;
             display: flex;
             flex-direction: column;
-            cursor: pointer;
+            cursor:pointer;
             text-decoration: none;
         }
 
         .project-image {
             object-fit: cover;
-            width: 100%;
-            aspect-ratio: 16/9;
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-            overflow: hidden;
-            background-color: #f5f5f5;
-        }
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
 
-        .project-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            transition: transform 0.3s ease;
-        }
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
 
-        .project-card:hover .project-image img {
-            transform: scale(1.05);
-        }
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
 
         .project-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         .project-content {
@@ -192,21 +192,15 @@
         .skill-tag:hover {
             background-color: #e0e0e0;
         }
-
         .skill-category {
-            margin-bottom: 2rem;
-            /* 增加類別之間的垂直間距 */
-        }
+    margin-bottom: 2rem;  /* 增加類別之間的垂直間距 */
+}
 
-        .skill-category+.skill-category {
-            /* 選擇第二個和之後的 skill-category */
-            margin-top: 2rem;
-            /* 增加額外的上方間距 */
-            padding-top: 2rem;
-            /* 增加內部上方間距 */
-            border-top: 1px solid #eee;
-            /* 可選：添加一條分隔線 */
-        }
+.skill-category + .skill-category {  /* 選擇第二個和之後的 skill-category */
+    margin-top: 2rem;    /* 增加額外的上方間距 */
+    padding-top: 2rem;   /* 增加內部上方間距 */
+    border-top: 1px solid #eee;  /* 可選：添加一條分隔線 */
+}
 
         /* 回到頂部按鈕樣式 */
         .back-to-top {
@@ -227,7 +221,7 @@
             visibility: hidden;
             transition: all 0.3s ease;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         .back-to-top:hover {
@@ -273,7 +267,7 @@
         .contact-info a {
             margin: 0;
             padding: 0.5rem 1rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255,255,255,0.2);
             border-radius: 4px;
         }
 
@@ -286,7 +280,7 @@
             .nav-link {
                 margin-left: 0;
                 padding: 0.5rem 0;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                border-bottom: 1px solid rgba(0,0,0,0.1);
             }
 
             .navbar-collapse {
@@ -294,7 +288,7 @@
                 padding: 1rem;
                 border-radius: 8px;
                 margin-top: 1rem;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             }
 
             .navbar.scrolled .navbar-collapse {
@@ -373,7 +367,6 @@
         }
     </style>
 </head>
-
 <body>
     <!-- 導航欄 -->
     <nav class="navbar navbar-expand-lg">
@@ -403,8 +396,8 @@
 
     <!-- 回到頂部按鈕 -->
     <button id="backToTop" class="back-to-top" title="Back to Top">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
+             stroke-linecap="round" stroke-linejoin="round">
             <polyline points="18 15 12 9 6 15"></polyline>
         </svg>
     </button>
@@ -416,7 +409,7 @@
                 <div class="col-md-8">
                     <div class="intro-card">
                         <p class="intro-text">Hi, I'm Libo, a frontend developer based in Taoyuan.</p>
-                        <p class="intro-text">雖非資訊相關科班出身,但對於學習各項程式新技術充滿熱情, 目前正在積極學習編程。</p>
+                        <p class="intro-text">我正在積極轉職前端工程師，專注於開發網頁應用程式和使用者介面。</p>
                     </div>
                 </div>
             </div>
@@ -424,55 +417,55 @@
     </section>
 
     <!-- 專案區塊 -->
-    <!-- 專案區塊 -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-heading">Projects :</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <a href="https://0508-play-one.vercel.app/" class="project-card" target="_blank">
-                        <div class="project-content">
-                            <div class="project-image">
-                                <img src="image/PlayOneLogo.svg" alt="PLAYONE 玩一番 專案圖片">
-                            </div>
-                            <div class="project-meta">個人專案 | 2024/3~2024/5</div>
-                            <h3 class="project-title">PLAYONE 玩一番</h3>
-                            <p class="project-description">
-                                個人獨立完成的專案，從 LOGO、UI/UX 規劃、自行繪製 wireframe、mockup，
-                                成功運用基礎的 HTML、CSS 和 JavaScript 建構 RWD 形式的網頁開發。
-                            </p>
+<!-- 專案區塊 -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="section-heading">Projects :</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <a href="https://0508-play-one.vercel.app/" class="project-card" target="_blank">
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="./public/image/PlayOneLogo.svg" alt="PLAYONE 玩一番 專案圖片">
                         </div>
-                        <div class="project-tags">
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">CSS</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">RWD</span>
+                        <div class="project-meta">個人專案 | 2024/3~2024/5</div>
+                        <h3 class="project-title">PLAYONE 玩一番</h3>
+                        <p class="project-description">
+                            個人獨立完成的專案，從 LOGO、UI/UX 規劃、自行繪製 wireframe、mockup，
+                            成功運用基礎的 HTML、CSS 和 JavaScript 建構 RWD 形式的網頁開發。
+                        </p>
+                    </div>
+                    <div class="project-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">RWD</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 mb-4">
+                <a href="https://tibamef2e.com/cid101/g6/" class="project-card" target="_blank">
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="./public/image/ToGoLogo.jpg" alt="TOGO 土狗 專案圖片">
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <a href="https://tibamef2e.com/cid101/g6/" class="project-card" target="_blank">
-                        <div class="project-content">
-                            <div class="project-image">
-                                <img src="image/ToGoLogo.jpg" alt="TOGO 土狗 專案圖片">
-                            </div>
-                            <div class="project-meta">團體專案 | 2024/5~2024/7</div>
-                            <h3 class="project-title">TOGO 土狗旅遊</h3>
-                            <p class="project-description">
-                                作為團隊專案的成員，主要負責實現客製化行程當中的功能，包括串接 API 功能、
-                                瀏覽功能以及會員面板功能。在短短兩個月的團體專案中提升了技術能力與團隊協作經驗。
-                            </p>
-                        </div>
-                        <div class="project-tags">
-                            <span class="skill-tag">Vue.js</span>
-                            <span class="skill-tag">API</span>
-                            <span class="skill-tag">團隊協作</span>
-                        </div>
-                    </a>
-                </div>
+                        <div class="project-meta">團體專案 | 2024/5~2024/7</div>
+                        <h3 class="project-title">TOGO 土狗旅遊</h3>
+                        <p class="project-description">
+                            作為團隊專案的成員，主要負責實現客製化行程當中的功能，包括串接 API 功能、
+                            瀏覽功能以及會員面板功能。在短短兩個月的團體專案中提升了技術能力與團隊協作經驗。
+                        </p>
+                    </div>
+                    <div class="project-tags">
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">API</span>
+                        <span class="skill-tag">團隊協作</span>
+                    </div>
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- 技能區塊 -->
     <section id="skills" class="section skills-section">
@@ -547,7 +540,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             const navbar = $('.navbar');
             const sections = $('.section');
             const backToTop = $('#backToTop');
@@ -581,7 +574,7 @@
                 }
 
                 // 內容區塊動畫
-                sections.each(function () {
+                sections.each(function() {
                     const sectionTop = $(this).offset().top;
                     if (scrollTop > sectionTop - windowHeight * 0.7) {
                         $(this).addClass('visible');
@@ -602,13 +595,13 @@
 
             // 點擊事件處理
             backToTop.click(scrollToTop);
-            $('.navbar-brand').click(function (e) {
+            $('.navbar-brand').click(function(e) {
                 e.preventDefault();
                 scrollToTop();
             });
 
             // 平滑滾動
-            $('a[href^="#"]').on('click', function (e) {
+            $('a[href^="#"]').on('click', function(e) {
                 e.preventDefault();
                 const target = $($(this).attr('href'));
                 if (target.length) {
@@ -620,5 +613,4 @@
         });
     </script>
 </body>
-
 </html>
